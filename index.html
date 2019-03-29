@@ -1,0 +1,283 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/gif" href="assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500,700|Raleway:300,400,500,600,700,800,900" rel="stylesheet"  type="text/css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.css" />
+      <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css" />
+      <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+      <link rel="stylesheet" href="bower_components/angular-busy/dist/angular-busy.css" />
+      <link rel="stylesheet" href="bower_components/angular-color-picker/dist/angularjs-color-picker.css" />
+      <link rel="stylesheet" href="bower_components/angular-confirm/css/angular-confirm.css" />
+      <link rel="stylesheet" href="bower_components/angular-hotkeys/build/hotkeys.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+	<!--<link data-require="bootstrap-css@2.3.2" data-semver="2.3.2" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />-->
+      <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="app/account/landingPage/css/custome - Copy.css">
+      <link rel="stylesheet" href="app/account/landingPage/css/custome.css">
+      <link rel="stylesheet" href="app/account/landingPage/css/semantic.css">
+      <link rel="stylesheet" href="app/account/landingPage/css/semantic.min.css">
+      <link rel="stylesheet" href="app/account/landingPage/css/w3-style.css">
+      <link rel="stylesheet" href="app/admin/admin.css">
+      <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/main/components.css">
+      <link rel="stylesheet" href="app/main/core.css">
+      <link rel="stylesheet" href="app/main/icons.css">
+      <link rel="stylesheet" href="app/main/main.css">
+      <link rel="stylesheet" href="app/main/pages.css">
+      <link rel="stylesheet" href="app/main/pages2019.css">
+      <link rel="stylesheet" href="app/main/responsive.css">
+      <link rel="stylesheet" href="app/main/style.css">
+      <link rel="stylesheet" href="components/footer/footer.css">
+      <link rel="stylesheet" href="components/modal/modal.css">
+      <link rel="stylesheet" href="app/main/ordergenie.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="ordergenieApp" class="fixed-left">
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- <navbar></navbar> -->
+    <div ui-view="" id="wrapper"></div>
+    <!-- <footer></footer> -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    
+    <!-- Manual link to Ck-editor is required -->
+    <script src="bower_components/ng-ckeditor/libs/ckeditor/ckeditor.js"></script>
+    
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/ng-table/dist/ng-table.js"></script>
+      <script src="bower_components/chartist/dist/chartist.min.js"></script>
+      <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+      <script src="bower_components/angular-ui-select/dist/select.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+      <script src="bower_components/angular-busy/dist/angular-busy.js"></script>
+      <script src="bower_components/ng-ckeditor/ng-ckeditor.js"></script>
+      <script src="bower_components/tinycolor/tinycolor.js"></script>
+      <script src="bower_components/angular-color-picker/dist/angularjs-color-picker.js"></script>
+      <script src="bower_components/angular-confirm/js/angular-confirm.js"></script>
+      <script src="bower_components/file-saver/FileSaver.js"></script>
+      <script src="bower_components/html2canvas/build/html2canvas.js"></script>
+      <script src="bower_components/jspdf/dist/jspdf.debug.js"></script>
+      <script src="bower_components/jspdf-autotable/dist/jspdf.plugin.autotable.js"></script>
+      <script src="bower_components/tableExport.jquery.plugin/tableExport.js"></script>
+      <script src="bower_components/angular-aria/angular-aria.js"></script>
+      <script src="bower_components/angular-hotkeys/build/hotkeys.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+      <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyBRnDJ-OngLj9lVsb7ifGDAnI_qEeuFUyc&libraries=placeses,visualization,drawing,geometry,places"></script> -->
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://maps.google.com/maps/api/js?key=AIzaSyBRnDJ-OngLj9lVsb7ifGDAnI_qEeuFUyc&libraries=placeses,visualization,drawing,geometry,places"></script>
+      <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyBRnDJ-OngLj9lVsb7ifGDAnI_qEeuFUyc&libraries=placeses,visualization,drawing,geometry,places"></script> -->
+    <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyBRnDJ-OngLj9lVsb7ifGDAnI_qEeuFUyc&libraries=placeses,visualization,drawing,geometry,places"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBRnDJ-OngLj9lVsb7ifGDAnI_qEeuFUyc&libraries=placeses,visualization,drawing,geometry,places"></script> -->
+    <!-- build:js(.tmp) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/admin/admin.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
+      <script src="components/util/util.module.js"></script>
+      <script src="app/main/mapusersalesman.controller.js"></script>
+      <script src="app/account/settings/settings.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/admin/admin.controller.js"></script>
+      <script src="app/account/account.js"></script>
+      <script src="app/admin/admin.router.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/main/aboutus.controller.js"></script>
+      <script src="app/main/addcustomer.controller.js"></script>
+      <script src="app/main/addgroupstockist.controller.js"></script>
+      <script src="app/main/addloyaltyprogram.controller.js"></script>
+      <script src="app/main/addnewemail.controller.js"></script>
+      <script src="app/main/addnewsms.controller.js"></script>
+      <script src="app/main/addnewuser.controller.js"></script>
+      <script src="app/main/addOffers.controller.js"></script>
+      <script src="app/main/addrole.controller.js"></script>
+      <script src="app/main/addscheme.controller.js"></script>
+      <script src="app/main/admin_invoiceDetails.controller.js"></script>
+      <script src="app/main/admin_new_route.controller.js"></script>
+      <script src="app/main/admincustomerlist.controller.js"></script>
+      <script src="app/main/admindeliveryschedule.controllers.js"></script>
+      <script src="app/main/adminerpsalesman.controller.js"></script>
+      <script src="app/main/adminproductlist.controller.js"></script>
+      <script src="app/main/alert.js"></script>
+      <script src="app/main/allnotification.controller.js"></script>
+      <script src="app/main/alluserlocation.controller.js"></script>
+      <script src="app/main/allusers.controller.js"></script>
+      <script src="app/main/applicationsetting.controller.js"></script>
+      <script src="app/main/bulkmapping.controller.js"></script>
+      <script src="app/main/bulkprodmapping.controller.js"></script>
+      <script src="app/main/callplandetails.controller.js"></script>
+      <script src="app/main/callplanlist.controller.js"></script>
+      <script src="app/main/callplanreport.controller.js"></script>
+      <script src="app/main/changepassword.controller.js"></script>
+      <script src="app/main/chemistadminprofile.controller.js"></script>
+      <script src="app/main/chemistpomappedproduct.controller.js"></script>
+      <script src="app/main/chemists.controller.js"></script>
+      <script src="app/main/clientlist.controller.js"></script>
+      <script src="app/main/clientprofile.controller.js"></script>
+      <script src="app/main/colorscheme.controller.js"></script>
+      <script src="app/main/contact.controller.js"></script>
+      <script src="app/main/contactus.controller.js"></script>
+      <script src="app/main/createcallplan.controller.js"></script>
+      <script src="app/main/createclient.controller.js"></script>
+      <script src="app/main/createnotification.controller.js"></script>
+      <script src="app/main/createroute.controller.js"></script>
+      <script src="app/main/createroutes.controller.js"></script>
+      <script src="app/main/createSettings.controller.js"></script>
+      <script src="app/main/createuser.controller.js"></script>
+      <script src="app/main/createusergroup.controller.js"></script>
+      <script src="app/main/customerlist.controller.js"></script>
+      <script src="app/main/dashboard.controller.js"></script>
+      <script src="app/main/dashboardChemist.controller.js"></script>
+      <script src="app/main/dashboardStockist.controller.js"></script>
+      <script src="app/main/delivary_report.controller.js"></script>
+      <script src="app/main/distributors.controller.js"></script>
+      <script src="app/main/editrole.controller.js"></script>
+      <script src="app/main/edituser.controller.js"></script>
+      <script src="app/main/emailtemplate.controller.js"></script>
+      <script src="app/main/erp_salesman_list.controller.js"></script>
+      <script src="app/main/erpinactivecust.controller.js"></script>
+      <script src="app/main/errorlog.controller.js"></script>
+      <script src="app/main/exceluploadconfig.controller.js"></script>
+      <script src="app/main/forgotpassword.controller.js"></script>
+      <script src="app/main/inactiveproducts.controller.js"></script>
+      <script src="app/main/LandingPage.Controller.js"></script>
+      <script src="app/main/listOffers.controller.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/main/managestockist.controller.js"></script>
+      <script src="app/main/managestockistdetails.controller.js"></script>
+      <script src="app/main/mapchemists.controller.js"></script>
+      <script src="app/main/mapchemiststockist.controller.js"></script>
+      <script src="app/main/mappings.controller.js"></script>
+      <script src="app/main/mapstockiest.controller.js"></script>
+      <script src="app/account/landingPage/css/semantic.js"></script>
+      <script src="app/main/medrep/medrep.controller.js"></script>
+      <script src="app/main/medrep/medreplist.controller.js"></script>
+      <script src="app/main/medrep/medrepprofile.controller.js"></script>
+      <script src="app/main/medrep/medreprequestnotification.controller.js"></script>
+      <script src="app/main/medrep/medrepstockist.controller.js"></script>
+      <script src="app/main/medrep/stockandsales.controller.js"></script>
+      <script src="app/main/moleculedetails.controller.js"></script>
+      <script src="app/main/mostsearcheditem.controller.js"></script>
+      <script src="app/main/multiselect.js"></script>
+      <script src="app/main/OGProdRequestsList.controller.js"></script>
+      <script src="app/main/orders.controller.js"></script>
+      <script src="app/main/ordersdist.controller.js"></script>
+      <script src="app/main/ourstory.controller.js"></script>
+      <script src="app/main/pages.controller.js"></script>
+      <script src="app/main/paymentdetail.controller.js"></script>
+      <script src="app/main/paymentdetails.controller.js"></script>
+      <script src="app/main/pdcLists.controller.js"></script>
+      <script src="app/main/pendingbills.controller.js"></script>
+      <script src="app/main/pendingbillsdist.controller.js"></script>
+      <script src="app/main/placeorder.controller.js"></script>
+      <script src="app/main/privacypolicy.controller.js"></script>
+      <script src="app/main/productcatalog.controller.js"></script>
+      <script src="app/main/productdetails.controller.js"></script>
+      <script src="app/main/productlist.controller.js"></script>
+      <script src="app/main/productmapping.controller.js"></script>
+      <script src="app/main/rangeselection.controller.js"></script>
+      <script src="app/main/registrationform.controller.js"></script>
+      <script src="app/main/regrequests.controller.js"></script>
+      <script src="app/main/reports.controller.js"></script>
+      <script src="app/main/requestdemoModal.Controller.js"></script>
+      <script src="app/main/requestnotifications.controller.js"></script>
+      <script src="app/main/retageinganalysis.controller.js"></script>
+      <script src="app/main/retaileranalysis.controller.js"></script>
+      <script src="app/main/returnhistory.controller.js"></script>
+      <script src="app/main/returns.controller.js"></script>
+      <script src="app/main/routes.controller.js"></script>
+      <script src="app/main/salesreturnreports.controller.js"></script>
+      <script src="app/main/salesreturns.controller.js"></script>
+      <script src="app/main/schemelist.controller.js"></script>
+      <script src="app/main/services.controller.js"></script>
+      <script src="app/main/setpassword.controller.js"></script>
+      <script src="app/main/smstemplate.controller.js"></script>
+      <script src="app/main/stkprodmapping.controller.js"></script>
+      <script src="app/main/stockiest/pomappedproduct.controller.js"></script>
+      <script src="app/main/stockiest/stkexceluploadconfig.controller.js"></script>
+      <script src="app/main/stockiest/stkuploadorders.controller.js"></script>
+      <script src="app/main/stockistadminprofile.controller.js"></script>
+      <script src="app/main/stockists.controller.js"></script>
+      <script src="app/main/superadmin.controller.js"></script>
+      <script src="app/main/superstockist.controller.js"></script>
+      <script src="app/main/superstockistrangeselection.controller.js"></script>
+      <script src="app/main/superstockistrequestnotifications.controller.js"></script>
+      <script src="app/main/unmappedcustomer.controller.js"></script>
+      <script src="app/main/upload_route_admin.controller.js"></script>
+      <script src="app/main/uploadinventory.controller.js"></script>
+      <script src="app/main/uploadorders.controller.js"></script>
+      <script src="app/main/usergroup.controller.js"></script>
+      <script src="app/main/users.controller.js"></script>
+      <script src="app/main/VDrequestnotifications.controller.js"></script>
+      <script src="app/main/viewnotification.controller.js"></script>
+      <script src="app/main/viewreturns.controller.js"></script>
+      <script src="app/main/viewrole.controller.js"></script>
+      <script src="app/main/viewstockistlist.controller.js"></script>
+      <script src="app/main/viewusers.controller.js"></script>
+      <script src="app/account/landingPage/css/semantic.min.js"></script>
+      <script src="components/auth/auth.service.js"></script>
+      <script src="components/auth/interceptor.service.js"></script>
+      <script src="components/auth/router.decorator.js"></script>
+      <script src="components/auth/user.service.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/modal/modal.service.js"></script>
+      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="components/navbar/navbar.directive.js"></script>
+      <script src="components/nevbar_1/navbar.controller.js"></script>
+      <script src="components/nevbar/navbar.controller.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
+      <script src="components/util/util.service.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  </body>
+</html>
